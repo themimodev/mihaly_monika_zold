@@ -1,0 +1,143 @@
+main,
+header,
+footer,
+article,
+aside,
+nav {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+body {
+  background-image: url(kepek/wp8965334.jpg);
+  margin: auto;
+  color: aliceblue;
+}
+
+header {
+  color: greenyellow;
+}
+
+nav ul li {
+  color: yellow;
+  padding: 10px;
+  background-color: green;
+}
+
+div {
+  border: 1px solid gray;
+  padding: 10px;
+  float:left;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.mycontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px;
+  list-style-type: none;
+  
+}
+
+img {
+    width: 100%;
+
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul li:hover a {
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "h h h"
+    "n n n"
+    "asb ar asj"
+    "f f f";
+}
+
+header {
+  grid-area: h;
+}
+
+nav {
+  grid-area: n;
+}
+
+aside.bal {
+  grid-area: asb;
+}
+
+aside.jobb {
+  grid-area: asj;
+}
+
+footer {
+  grid-area: f;
+}
+
+article {
+  grid-area: ar;
+}
+
+
+@media screen and (max-width: 800px) {
+  nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "h"
+      "n"
+      "ar"
+      "asj"
+      "asb"
+      "f";
+  }
+
+ .mycontainer {
+  grid-template-columns: 1fr 1fr;
+  
+} 
+
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "h"
+      "n"
+      "ar"
+      "asj"
+      "asb"
+      "f";
+  }
+
+ .mycontainer {
+  grid-template-columns: 1fr;
+  
+  
+} 
+
+}
+
